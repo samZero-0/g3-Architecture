@@ -555,7 +555,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    /* border: 2px solid black; */
+    /* border: 2px solid rgb(202, 15, 15); */
 }
 .icon-container{
     display: flex;
@@ -585,7 +585,28 @@
     }
 
 
+/* footer styling */
 
+.footer-container{
+    border-radius: 8px;
+    background: rgb(255, 244, 231);
+    width:80%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 40px;
+
+}
+
+.footer-container p{
+    color: rgb(66, 66, 66);
+    font-family: "Work Sans", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: center;
+}
 
 
 
@@ -601,13 +622,18 @@
         flex-direction: column-reverse;
         gap:30px;
     }
-    .banner, .banner-desc, .banner-title, .feature-text-div , .love-text, .facts-cards{
+    .banner, .banner-desc, .banner-title, .feature-text-div , .love-text, .facts-cards, .love-container{
         width: 100%;
     }
     .feature-img-container{
         grid-template-columns: repeat(1,1fr);
+        gap:0px;
+        
     }
-    .love-image{
+    .feature-img-container img , .love-card{
+        width:100%;
+    }
+    .love-image, .footer-container, .love-card-container{
         width:100%;
     }
     .love-image img{
@@ -615,13 +641,35 @@
     }
     .love-btn{
         margin-left:10px;
+        width: 100%;
     }
 
     .card-container{
         gap:50px;
     }
     #sponsor{
-        margin-top: 0px;
-        margin-bottom: 0px;
+
+        width: 100%;
+        margin-top: 800px;
+        margin-bottom:100px;
     }
+
+    .icon-container{
+        gap:20px;
+    }
+    .sponsor-title p{
+        font-size: 2.5rem;
+    }
+
+    .facts-cards{
+        padding: 0px;
+    }
+    .footer-container{
+        font:1rem;
+        padding: 20px;
+    }
+    .love-title{
+        justify-content: center;
+    }
+  
 }   
